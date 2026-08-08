@@ -31,7 +31,8 @@ app.get('/', (req, res) => {
 app.post('/products', productCtrl.create)
 app.get('/products', productCtrl.index)
 app.get('/products/:productId', productCtrl.show)
-app.put('/products/:productId', productCtrl.update)
+
+app.put('/products/:productId/edit', productCtrl.update)
 app.delete('/products/:productId', productCtrl.deleteProduct)
 
 
